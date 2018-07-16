@@ -1,0 +1,339 @@
+*{
+  font-family: Helvetica, "sans-serif";
+  color: #4e5965;
+  }
+
+/* header */
+header{
+  display: flex;
+  height: 8rem;
+}
+
+header img{
+    height: 4rem;
+    margin: 2rem 0 2rem 3rem;
+}
+
+
+.ColmarAcademy{
+  font-size: 2rem;
+  margin: auto 0;
+  display: flex;
+}
+
+.Bold{
+  font-weight: bold;
+}
+
+.Darkgray{
+  color: darkgrey;
+}
+
+.HeaderLinks{
+  align-self: flex-end;
+  margin: auto 3rem auto auto;
+}
+
+header ul{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  list-style-type:none;
+}
+
+header ul li{
+      font-size: 2rem;
+      margin-left: 2rem;
+}
+
+/* change text to icons in header for smartphonescreens */
+
+.headersmartphone{
+  height: 8rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.headersmartphone img{
+  height: 4rem;
+  margin: auto;
+}
+
+@media only screen and (max-width: 720px) {
+      header {display:none}
+}
+
+@media only screen and (min-width: 720px) {
+      .headersmartphone {display: none}
+}
+
+
+/* banner */
+.Banner{
+  display: flex;
+  background-color: darkgrey;
+}
+
+.Bannerpic{
+  width: 60%;
+}
+
+.Bannerpic img{
+   width: auto;
+   margin: 4rem 1rem 4rem 3rem;
+}
+
+.Bannertext{
+  margin: auto 18rem auto 2rem;
+}
+
+.Bannertext p:first-child {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.Bannertext p:nth-child(even) {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 3rem 0;
+}
+
+.Button a{
+  color: white;
+  text-decoration:none;
+}
+
+
+.Button{
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #4e5965;
+  text-align: center;
+  width: 100%;
+}
+
+/* banner for smartphones */
+
+@media only screen and (max-width: 720px) {
+  .Banner {display: inline-block}
+  .Bannerpic img {width: 100%}
+  .Bannerpic img {margin: 0}
+  .Bannerpic {width: 100%}
+  .Bannertext {margin: 4rem 2rem}
+}
+
+/* information */
+
+.Information{
+  display: flex;
+}
+
+.Infopic{
+  width: 60%;
+}
+
+.Infopic img{
+   width: auto;
+   margin: 4rem 3rem;
+}
+
+.Practicing{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 3rem 3rem;
+}
+
+.Lorem_volupt{
+  font-size: 1.4rem;
+  margin-left: 3rem;
+  margin-right: 6rem;
+}
+
+.Emanuel{
+    margin-left: 3rem;
+    margin-bottom: 4rem;
+}
+
+.Allinfopicx{
+  width: 40%;
+  margin-top: 2rem;
+}
+
+.Infopics1{
+  display: flex;
+  border-style: solid;
+  border-color: Lightgrey;
+  border-width: thin;
+}
+
+.Infopic1 img{
+  width:75%;
+  height: auto;
+  margin: 2rem 2rem;
+}
+
+.Infopic1Txt p{
+  font-size:1.4rem;
+}
+
+
+.Infopic1Txt{
+  width: 60%;
+  margin: auto 3rem auto 0rem;
+}
+
+.Blue{
+  color: blue;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.Lightgrey{
+  background-color: Lightgrey;
+}
+
+/* information for smartphones */
+
+@media only screen and (max-width: 720px) {
+  .Allinfopicx {width: 100%}
+  .Infopic1 {margin: 2rem}
+  .Infopic1 img{
+    width:100%;
+    height: auto;
+    margin: 0;
+  }
+  .Infopic {display: none}
+  .large {display: none}
+  .Infopics1 {border-style: hidden}
+  .Infopics1 {display: block}
+  .Infopics1 img {width: 100%}
+  .Infopic1Txt {margin-left: 2rem}
+  .Lightgrey {background-color: inherit}
+  .Practicing{
+      font-size: 3rem;
+      font-weight: 700;
+      margin: 4rem auto 2rem auto;
+  }
+}
+
+
+@media only screen and (min-width: 720px) {
+  .small {display: none}
+}
+
+/* course */
+
+.Course1{
+background-color: Lightgrey;
+}
+
+.Center{
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.Course2{
+  justify-content: space-between;
+  margin: 2rem 7rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Course3{
+  width:29%;
+  margin: 2rem;
+  background-color: white;
+}
+
+.Course3 img{
+  height: auto;
+  width: 100%;
+}
+
+.Course4{
+  margin: 2rem 2rem 3rem 2rem;;
+  font-size: 1.4rem;
+}
+
+/* information for smartphones */
+
+@media only screen and (max-width: 720px) {
+  .Course3 img {display: none}
+  .Course3 p {display: none}
+  .Course3 {width: 100%}
+  .Course2 {margin: 1rem 2rem 3rem 2rem}
+  .Course3 {margin: 1rem auto}
+  .Course3 {display: block}
+  .Course3 {background-color: Lightgrey}
+  .Course1 {background-color: White}
+  .Course4 h1 {padding: 2rem auto 3rem 2rem}
+  .Course4 {margin: 2rem}
+  .Course4 h1{font-size:2.2rem}
+  }
+}
+
+
+
+/* thesis */
+
+.Thesis1{
+  display: flex;
+  border-bottom: solid;
+  border-color: Lightgrey;
+  border-width: thin;
+}
+
+.Thesis2{
+  width: 60%;
+  margin: 2rem 3rem 4rem 3rem;
+}
+
+.Thesis2 video{
+  width: 100%;
+  height: auto;
+}
+
+.Thesispics1{
+  display: flex;
+}
+
+.Thesis3{
+  margin-right: 2rem;
+}
+
+.Thesis3 p{
+  font-size: 1.4rem;
+}
+
+/* thesis for smartphones */
+
+@media only screen and (max-width: 720px) {
+  .Nosmartphone {display: none}
+  .Thesispics1 {display: none}
+  .Thesis3 {display: none}
+  .Thesis2 {width:100%}
+  .Thesis2 {margin: 0}
+}
+
+/* footer */
+
+.Footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top:2rem;
+  margin-left: 3rem;
+}
+
+.Footer2 span{
+  margin-right: 1rem;
+}
+
+/* footer for smartphones */
+
+@media only screen and (max-width: 720px) {
+  .Footer2 {display: none}
+  .Footer{margin-left: 2rem}
+  }
+}
